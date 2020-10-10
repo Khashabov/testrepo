@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [nop commerce Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="regression test(failed)" verbose="0">
+    <classes>
+      <class name="tests.UserRegisterTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="login"/>
+          <include name="closeDriver"/>
+          <include name="registredUserCanLogout"/>
+          <include name="UserRegisterSuccesfully"/>
+          <include name="takingScreenShot"/>
+        </methods>
+      </class> <!-- tests.UserRegisterTest -->
+      <class name="tests.MyAccountTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="UserChangePassword"/>
+          <include name="closeDriver"/>
+          <include name="login"/>
+          <include name="registredUserCanLogout"/>
+          <include name="UserRegisterSuccesfully"/>
+          <include name="takingScreenShot"/>
+        </methods>
+      </class> <!-- tests.MyAccountTest -->
+    </classes>
+  </test> <!-- regression test(failed) -->
+</suite> <!-- Failed suite [nop commerce Suite] -->

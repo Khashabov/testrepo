@@ -1,0 +1,8 @@
+tests/UserSearchWithAutoComplete.class
+tests/MyAccountTest.class
+tests/SearchItemTest.class
+tests/UserRegisterTest.class
+tests/UsrCanHoverAnItem.class
+tests/TestBase.class
+utilities/Helper.class
+tests/ContactUsTest.class

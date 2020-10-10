@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-24T22:52:37 EET" name="Default suite" finished-at="2020-09-24T22:52:38 EET" duration-ms="272">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7b227d8d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2020-09-24T22:52:37 EET" name="Default test" finished-at="2020-09-24T22:52:38 EET" duration-ms="272">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@7b227d8d]" started-at="2020-09-24T22:52:32 EET" name="startDriver" finished-at="2020-09-24T22:52:37 EET" duration-ms="5647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@7b227d8d]" started-at="2020-09-24T22:52:37 EET" name="setUpClass" finished-at="2020-09-24T22:52:38 EET" duration-ms="228" status="FAIL">
+          <exception class="io.cucumber.core.gherkin.FeatureParserException">
+            <message>
+              <![CDATA[Failed to parse resource at: file:///home/khashab/eclipse-workspace/taf/src/test/java/features/userRegistration.feature
+(1:1): A tag may not contain whitespace
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '@feature user registration'
+(3:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'check that the user can register successfully'
+(5:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario'
+(6:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given the user in the home page'
+(7:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When  i click on register link'
+(8:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And i enter the user data'
+(9:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then registration page open successfully']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///home/khashab/eclipse-workspace/taf/src/test/java/features/userRegistration.feature
+(1:1): A tag may not contain whitespace
+(1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '@feature user registration'
+(3:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'check that the user can register successfully'
+(5:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario'
+(6:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given the user in the home page'
+(7:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'When  i click on register link'
+(8:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And i enter the user data'
+(9:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Then registration page open successfully'
+at io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:52)
+at io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:43)
+at java.base/java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+at io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:70)
+at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:55)
+at java.base/java.nio.file.Files.walkFileTree(Files.java:2724)
+at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:48)
+at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:28)
+at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:107)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.core.gherkin.FeatureParserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@7b227d8d]" started-at="2020-09-24T22:52:38 EET" name="tearDownClass" finished-at="2020-09-24T22:52:38 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:runner.TestRunner@7b227d8d]" started-at="2020-09-24T22:52:38 EET" name="closeDriver" finished-at="2020-09-24T22:52:38 EET" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
